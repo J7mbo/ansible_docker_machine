@@ -1,4 +1,4 @@
-ansible_docker_machine
+docker_machine_create
 --
 
 Overview
