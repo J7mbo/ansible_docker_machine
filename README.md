@@ -10,9 +10,9 @@ already provisioned.
 Description
 --
 
-Require the ability to install docker on some node you've provisioned with, say, terraform? You can do this with docker-machine 
-create which not only installs and configures docker for you but sets up an ssh configuration so you can run `docker-machine ssh`
-to connect to those machines. 
+Require the ability to install docker on some node you've provisioned with, say, terraform? You can do this with docker-machine create which not only installs and configures docker for you but sets up an ssh configuration so you can run `docker-machine ssh` to connect to those machines.
+
+By default, it's doing a `--driver generic` as that's all I needed. If you need `digitalocean` for example with other configuration settings, open an issue. Shouldn't take long to add.
 
 Let's say you want to do this with ansible. You could use `shell` in ansible, or you could use this, which does it for you. Nothing complex.
 
