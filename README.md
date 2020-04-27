@@ -30,8 +30,9 @@ Here is the **task**, which goes in your playbook:
 ```
 - name: "Create docker-machine"
   docker_machine_create:
-    ip: {{ machine_ip }}
-    ssh_key: {{ machine_ssh_key }}
+    name: "{{ name }}"
+    ip: "{{ machine_ip }}"
+    ssh_key: "{{ machine_ssh_key }}"
 ```
 
 To use this module locally, you can follow the instructions [here](https://docs.ansible.com/ansible/latest/dev_guide/developing_locally.html). 
